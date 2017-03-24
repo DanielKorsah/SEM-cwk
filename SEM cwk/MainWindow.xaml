@@ -6,9 +6,5 @@
         xmlns:local="clr-namespace:SEM_cwk"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Button x:Name="SignUpButton" Content="Sign Up" HorizontalAlignment="Left" Margin="335,135,0,0" VerticalAlignment="Top" Width="131" Click="SignUpButton_Click" Height="79"/>
-        <Button x:Name="LogInButton" Content="Log In" HorizontalAlignment="Left" Margin="53,135,0,0" VerticalAlignment="Top" Width="131" Height="79" Click="LogInButton_Click"/>
-
-    </Grid>
+    <Grid/>
 </Window>

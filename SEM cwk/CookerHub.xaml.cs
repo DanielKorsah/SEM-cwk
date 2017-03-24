@@ -16,15 +16,13 @@ using System.Windows.Shapes;
 namespace SEM_cwk
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CookerHub.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CookerHub : Page
     {
-        public MainWindow()
+        public CookerHub()
         {
             InitializeComponent();
-            this.Content = new SignIn();
         }
-        
     }
 }

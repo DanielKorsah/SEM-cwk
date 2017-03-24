@@ -16,15 +16,13 @@ using System.Windows.Shapes;
 namespace SEM_cwk
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for SignUp.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SignUp : Page
     {
-        public MainWindow()
+        public SignUp()
         {
             InitializeComponent();
-            this.Content = new SignIn();
         }
-        
     }
 }
