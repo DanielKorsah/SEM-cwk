@@ -8,12 +8,13 @@ using Newtonsoft.Json;
 namespace SEM_cwk
 {
     
-    class User
+    class Cook
     {
         private string name;
-        private bool cook;
-        private bool safetyCert;
+        private bool hygieneCert;
         private bool pvg;
+        private DateTime hDate;
+        private DateTime pDate;
 
         public string Name
         {
@@ -21,22 +22,30 @@ namespace SEM_cwk
             set { name = value; }
         }
 
-        public bool Cook
-        {
-            get { return cook; }
-            set { cook = value; }
-        }
+        
 
-        public bool SafetyCert
+        public bool HygieneCert
         {
-            get { return safetyCert; }
-            set { safetyCert = value; }
+            get { return hygieneCert; }
+            set { hygieneCert = value; }
         }
 
         public bool Pvg
         {
             get { return pvg; }
             set { pvg = value; }
+        }
+
+        public DateTime H_Date
+        {
+            get { return hDate; }
+            set { hDate = value; }
+        }
+
+        public DateTime P_Date
+        {
+            get { return pDate; }
+            set { pDate = value; }
         }
     }
 }
