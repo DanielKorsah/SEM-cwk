@@ -9,12 +9,12 @@
       Title="CookerHub">
 
     <Grid>
-        <Label x:Name="label" Content="Approval Status" HorizontalAlignment="Left" Margin="50,65,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="50,96,0,0" VerticalAlignment="Top" Height="142" Width="93"/>
-        <Button x:Name="button" Content="Hygiene Instructions" HorizontalAlignment="Left" Margin="148,96,0,0" VerticalAlignment="Top" Width="150"/>
-        <Button x:Name="button1" Content="Hygiene Test Update" HorizontalAlignment="Left" Margin="148,121,0,0" VerticalAlignment="Top" Width="150"/>
-        <Button x:Name="button2" Content="PVG Update" HorizontalAlignment="Left" Margin="148,146,0,0" VerticalAlignment="Top" Width="150"/>
-        <Button x:Name="matchButton" Content="Find a Match" HorizontalAlignment="Left" Margin="148,218,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label x:Name="label" Content="Approval Status" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="statusLabel" Content="" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Height="142" Width="155"/>
+        <Button x:Name="intstructionButton" Content="Hygiene Instructions" HorizontalAlignment="Left" Margin="170,96,0,0" VerticalAlignment="Top" Width="150" Click="instructionButton_Click"/>
+        <Button x:Name="hTestButton" Content="Hygiene Test Update" HorizontalAlignment="Left" Margin="170,121,0,0" VerticalAlignment="Top" Width="150" Click="hTestButton_Click"/>
+        <Button x:Name="pvgButton" Content="PVG Update" HorizontalAlignment="Left" Margin="170,146,0,0" VerticalAlignment="Top" Width="150" Click="pvgButton_Click"/>
+        <Button x:Name="matchButton" Content="Find a Match" HorizontalAlignment="Left" Margin="170,218,0,0" VerticalAlignment="Top" Width="150"/>
 
     </Grid>
 </Page>

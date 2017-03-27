@@ -45,13 +45,13 @@ namespace SEM_cwk
 
         public DateTime H_Date
         {
-            get { return hDate; }
+            get { return hDate.Date; }
             set { hDate = value; }
         }
 
         public DateTime P_Date
         {
-            get { return pDate; }
+            get { return pDate.Date; }
             set { pDate = value; }
         }
     }
