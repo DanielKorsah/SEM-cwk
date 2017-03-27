@@ -9,8 +9,15 @@ namespace SEM_cwk
     public class Eater
     {
         private string name;
-        private string password;
-        private float distance;
+        private int id;
+        private double distance;
+
+        public Eater(string n, int i, double d)
+        {
+            name = n;
+            id = i;
+            distance = d;
+        }
 
         public string Name
         {
@@ -18,13 +25,13 @@ namespace SEM_cwk
             set { name = value; }
         }
 
-        public string Password
+        public int ID
         {
-            get { return password; }
-            set { password = value; }
+            get { return id; }
+            set { id = value; }
         }
 
-        public float Distance
+        public double Distance
         {
             get { return distance; }
             set { distance = value; }

@@ -1,0 +1,16 @@
+﻿<Page x:Class="SEM_cwk.Browser"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SEM_cwk"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Browser">
+
+    <Grid>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="mButton" Content="Match" HorizontalAlignment="Left" Margin="10,127,0,0" VerticalAlignment="Top" Width="75" Click="mButton_Click"/>
+        <Label x:Name="label" Content="Request a match." HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

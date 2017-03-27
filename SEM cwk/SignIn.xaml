@@ -10,8 +10,8 @@
 
     <Grid>
         <Label x:Name="label" Content="Sign into you're account&#xD;&#xA;or sign up a new one." HorizontalAlignment="Left" Margin="191,90,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="button" Content="Log In" HorizontalAlignment="Left" Margin="72,278,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-        <Button x:Name="button1" Content="Sign Up" HorizontalAlignment="Left" Margin="431,283,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+        <Button x:Name="button" Content="Log In" HorizontalAlignment="Left" Margin="72,251,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="button1" Content="Sign Up" HorizontalAlignment="Left" Margin="370,251,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
         <TextBox x:Name="nameBox" HorizontalAlignment="Left" Height="23" Margin="72,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Obama"/>
         <TextBox x:Name="passBox" HorizontalAlignment="Left" Height="23" Margin="72,223,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="120"/>
 

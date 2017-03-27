@@ -59,6 +59,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Browser.xaml.cs">
+      <DependentUpon>Browser.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CookerHub.xaml.cs">
       <DependentUpon>CookerHub.xaml</DependentUpon>
     </Compile>
@@ -67,6 +70,10 @@
       <DependentUpon>SignIn.xaml</DependentUpon>
     </Compile>
     <Compile Include="Cook.cs" />
+    <Page Include="Browser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CookerHub.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

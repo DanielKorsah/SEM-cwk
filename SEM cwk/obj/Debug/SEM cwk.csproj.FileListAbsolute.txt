@@ -36,3 +36,5 @@ C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SignIn.baml
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SEM cwk.g.resources
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SEM_cwk.Properties.Resources.resources
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SEM cwk.csproj.GenerateResource.Cache
+C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\Browser.g.cs
+C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\Browser.baml
