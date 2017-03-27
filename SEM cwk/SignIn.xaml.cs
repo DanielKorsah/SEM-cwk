@@ -20,11 +20,32 @@ namespace SEM_cwk
     /// </summary>
     public partial class SignIn : Page
     {
-        public SignIn()
+        private Cook c;
+        private MainWindow mw;
+        public SignIn(Cook cookAccount, MainWindow mw_in)
         {
             InitializeComponent();
+            c = cookAccount;
+            mw = mw_in;
         }
 
-       
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            if (nameBox.Text == c.Name && passBox.Text == c.Password)
+            {
+                CookerHub ch = new CookerHub(c, mw);
+                mw.Content = ch;
+            }
+            else
+            {
+                MessageBox.Show("Incorrect login details!");
+            }
+            
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Nope! Not in spec!");
+        }
     }
 }

@@ -20,9 +20,25 @@ namespace SEM_cwk
     /// </summary>
     public partial class CookerHub : Page
     {
-        public CookerHub()
+        Cook c;
+        MainWindow mw;
+
+        public CookerHub(Cook cookAccount, MainWindow mw_in)
         {
             InitializeComponent();
+            c = cookAccount;
+            mw = mw_in;
+
+            if(c.HygieneCert && c.Pvg)
+            {
+                statusLabel.Content += "APPROVED";
+            }
+            else
+            {
+                statusLabel.Content += "NOT APPROVED";
+            }
         }
+
+
     }
 }

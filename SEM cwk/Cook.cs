@@ -8,11 +8,14 @@ using Newtonsoft.Json;
 namespace SEM_cwk
 {
     
-    class Cook
+    public class Cook
     {
         private string name;
+        private string password;
         private bool hygieneCert;
         private bool pvg;
+
+        //expiry dates for hygiene certification and pvg
         private DateTime hDate;
         private DateTime pDate;
 
@@ -22,8 +25,12 @@ namespace SEM_cwk
             set { name = value; }
         }
 
+        public string Password
+        {
+            get { return password; }
+            set { password = value; }
+        }
         
-
         public bool HygieneCert
         {
             get { return hygieneCert; }

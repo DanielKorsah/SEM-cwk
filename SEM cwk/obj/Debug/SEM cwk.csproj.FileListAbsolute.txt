@@ -25,18 +25,14 @@ C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SEM cwk.csprojResolveAssemblyReference.cache
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\CookerHub.g.cs
-C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\EaterHub.g.cs
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\MainWindow.g.cs
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SignIn.g.cs
-C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SignUp.g.cs
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\App.g.cs
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SEM cwk_MarkupCompile.cache
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SEM cwk_MarkupCompile.lref
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\CookerHub.baml
-C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\EaterHub.baml
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\MainWindow.baml
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SignIn.baml
-C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SignUp.baml
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SEM cwk.g.resources
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SEM_cwk.Properties.Resources.resources
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SEM cwk.csproj.GenerateResource.Cache

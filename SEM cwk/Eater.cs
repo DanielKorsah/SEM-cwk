@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SEM_cwk
 {
-    class Eater
+    public class Eater
     {
         private string name;
         private string password;
@@ -23,6 +23,7 @@ namespace SEM_cwk
             get { return password; }
             set { password = value; }
         }
+
         public float Distance
         {
             get { return distance; }

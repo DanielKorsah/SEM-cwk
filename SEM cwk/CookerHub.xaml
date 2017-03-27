@@ -9,6 +9,12 @@
       Title="CookerHub">
 
     <Grid>
-        
+        <Label x:Name="label" Content="Approval Status" HorizontalAlignment="Left" Margin="50,65,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="50,96,0,0" VerticalAlignment="Top" Height="142" Width="93"/>
+        <Button x:Name="button" Content="Hygiene Instructions" HorizontalAlignment="Left" Margin="148,96,0,0" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="button1" Content="Hygiene Test Update" HorizontalAlignment="Left" Margin="148,121,0,0" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="button2" Content="PVG Update" HorizontalAlignment="Left" Margin="148,146,0,0" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="matchButton" Content="Find a Match" HorizontalAlignment="Left" Margin="148,218,0,0" VerticalAlignment="Top" Width="150"/>
+
     </Grid>
 </Page>

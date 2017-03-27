@@ -62,21 +62,12 @@
     <Compile Include="CookerHub.xaml.cs">
       <DependentUpon>CookerHub.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EaterHub.xaml.cs">
-      <DependentUpon>EaterHub.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Eater.cs" />
     <Compile Include="SignIn.xaml.cs">
       <DependentUpon>SignIn.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SignUp.xaml.cs">
-      <DependentUpon>SignUp.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="User.cs" />
+    <Compile Include="Cook.cs" />
     <Page Include="CookerHub.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EaterHub.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -93,10 +84,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SignIn.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SignUp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
