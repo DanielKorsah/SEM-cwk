@@ -20,27 +20,56 @@ namespace SEM_cwk
     /// </summary>
     public partial class SignIn : Page
     {
-        private Cook c;
+        private Cook a = new Cook();
+        private Cook b = new Cook();
+        private Cook c = new Cook();
+
         private MainWindow mw;
-        public SignIn(Cook cookAccount, MainWindow mw_in)
+        public SignIn( MainWindow mw_in)
         {
             InitializeComponent();
-            c = cookAccount;
+            
             mw = mw_in;
         }
+        
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            if (nameBox.Text == c.Name && passBox.Text == c.Password)
+            a.Name = "c1";
+            a.Password = "password";
+            a.HygieneCert = "OK";
+            a.Pvg = "AWAITING RESULT";
+            a.H_Date = new DateTime(2017, 12, 25);
+            
+            b.Name = "c2";
+            b.Password = "password";
+            b.HygieneCert = "OK";
+            b.Pvg = "REJECTED";
+            b.H_Date = new DateTime(2017, 12, 25);
+
+            c.Name = "c3";
+            c.Password = "password";
+            c.HygieneCert = "OK";
+            c.Pvg = "OK";
+            c.H_Date = new DateTime(2017, 12, 25);
+
+            if (nameBox.Text == "c1")
+            {
+                CookerHub ch = new CookerHub(a, mw);
+            }
+            else if(nameBox.Text == "c2")
+            {
+                CookerHub ch = new CookerHub(b, mw);
+            }
+            else if (nameBox.Text == "c3")
             {
                 CookerHub ch = new CookerHub(c, mw);
-                mw.Content = ch;
             }
             else
             {
-                MessageBox.Show("Incorrect login details!");
+                MessageBox.Show("input error");
             }
-            
+
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)

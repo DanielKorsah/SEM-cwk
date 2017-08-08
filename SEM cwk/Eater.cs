@@ -3,26 +3,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace SEM_cwk
 {
-    public class Eater
+    public class Eater:User
     {
-        private string name;
+     
         private int id;
-        private double distance;
 
         public Eater(string n, int i, double d)
         {
             name = n;
             id = i;
-            distance = d;
+            this.location = "Edinburgh";
         }
 
         public string Name
         {
-            get { return name; }
-            set { name = value; }
+            get { return this.name; }
+            set { this.name = value; }
+        }
+
+        public string Password
+        {
+            get { return this.password; }
+            set { this.password = value; }
+        }
+
+        public string Location
+        {
+            get { return this.location; }
+            set { this.location = value; }
         }
 
         public int ID
@@ -31,10 +43,11 @@ namespace SEM_cwk
             set { id = value; }
         }
 
-        public double Distance
+        public void RateMeal(int num)
         {
-            get { return distance; }
-            set { distance = value; }
+            MessageBox.Show("you rated " + num + " stars");
         }
+
+
     }
 }

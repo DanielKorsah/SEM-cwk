@@ -20,23 +20,44 @@ namespace SEM_cwk
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Cook a = new Cook();
+        private Cook b = new Cook();
         private Cook c = new Cook();
+        
 
         public MainWindow()
         {
             InitializeComponent();
             MainWindow mw = this;
 
-            c.Name = "Obama";
+            a.Name = "c1";
+            a.Password = "password";
+            a.HygieneCert = "OK";
+            a.Pvg = "Awaiting Result";
+
+            //both run out on christmas
+            a.H_Date = new DateTime(2017, 12, 25);
+            
+
+
+            b.Name = "c2";
+            b.Password = "password";
+            b.HygieneCert = "OK";
+            b.Pvg ="Rejected";
+
+            //both run out on christmas
+            b.H_Date = new DateTime(2017, 12, 25);
+
+            c.Name = "c3";
             c.Password = "password";
-            c.HygieneCert = true;
-            c.Pvg = true;
+            c.HygieneCert = "OK";
+            c.Pvg = "OK";
 
             //both run out on christmas
             c.H_Date = new DateTime(2017, 12, 25);
-            c.P_Date = new DateTime(2017, 12, 25);
 
-            this.Content = new SignIn(c, mw);
+            
+            this.Content = new SignIn(mw);
         }
         
     }

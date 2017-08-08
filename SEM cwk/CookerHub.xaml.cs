@@ -29,42 +29,44 @@ namespace SEM_cwk
             InitializeComponent();
             c = cookAccount;
             mw = mw_in;
+            mw.Content = this;
 
             //if hygiene test expires at a date later than current date PVG is true
             if (DateTime.Compare(c.H_Date, DateTime.Now.Date) >= 0)
-                c.HygieneCert = true;
+                c.HygieneCert = "OK";
             else
-                c.HygieneCert = false;
-
-            //if pvg expires at a date later than current date PVG is true
-            if (DateTime.Compare(c.P_Date, DateTime.Now.Date) >= 0)
-                c.Pvg = true;
-            else
-                c.Pvg = false;
+                c.HygieneCert = "EXPIRED";
+            
 
             //Print current approval status and activate or deactivate button to find a match
-            if (c.HygieneCert && c.Pvg)
+            if (c.HygieneCert == "OK" && c.Pvg == "OK")
             {
+                c.CookApproved = true;
                 statusLabel.Content += "APPROVED";
                 matchButton.IsEnabled = true;
             }
             else
             {
+                c.CookApproved = false;
                 statusLabel.Content += "NOT APPROVED";
                 matchButton.IsEnabled = false;
             }
-                
 
 
-            if(c.HygieneCert)
+
+            if (c.HygieneCert == "OK")
                 statusLabel.Content += "\nHygiene Certified: Yes\nExpires on: " + c.H_Date.ToString("yyyy-MM-dd");
             else
                 statusLabel.Content += "\nHygiene Certified: No";
-            
-            if(c.Pvg)
-                statusLabel.Content += "\nPVG up-to-date: Yes\nExpires on: " + c.P_Date.ToString("yyyy-MM-dd");
+
+            if (c.Pvg == "OK")
+                statusLabel.Content += "\nPVG OK";
+            else if (c.Pvg == "AWAITING RESULT")
+                statusLabel.Content += "\nPVG AWAITING APPROVAL";
             else
-                statusLabel.Content += "\nPVG up-to-date: No";
+                statusLabel.Content += "\nPVG REJECTED";
+
+
         }
 
         public CookerHub(Cook cookAccount, MainWindow mw_in, Eater m)
@@ -83,37 +85,36 @@ namespace SEM_cwk
 
             //if hygiene test expires at a date later than current date PVG is true
             if (DateTime.Compare(c.H_Date, DateTime.Now.Date) >= 0)
-                c.HygieneCert = true;
+                c.HygieneCert = "OK";
             else
-                c.HygieneCert = false;
-
-            //if pvg expires at a date later than current date PVG is true
-            if (DateTime.Compare(c.P_Date, DateTime.Now.Date) >= 0)
-                c.Pvg = true;
-            else
-                c.Pvg = false;
+                c.HygieneCert = "EXPIRED";
+            
 
             //Print current approval status and activate or deactivate button to find a match
-            if (c.HygieneCert && c.Pvg)
+            if (c.HygieneCert == "OK" && c.Pvg == "OK")
             {
+                c.CookApproved = true;
                 statusLabel.Content += "APPROVED";
                 matchButton.IsEnabled = true;
             }
             else
             {
+                c.CookApproved = false;
                 statusLabel.Content += "NOT APPROVED";
                 matchButton.IsEnabled = false;
             }
 
-            if (c.HygieneCert)
+            if (c.HygieneCert == "OK")
                 statusLabel.Content += "\nHygiene Certified: Yes\nExpires on: " + c.H_Date.ToString("yyyy-MM-dd");
             else
                 statusLabel.Content += "\nHygiene Certified: No";
 
-            if (c.Pvg)
-                statusLabel.Content += "\nPVG up-to-date: Yes\nExpires on: " + c.P_Date.ToString("yyyy-MM-dd");
+            if (c.Pvg == "OK")
+                statusLabel.Content += "\nPVG OK";
+            else if (c.Pvg == "AWAITING RESULT")
+                statusLabel.Content += "\nPVG AWAITING APPROVAL";
             else
-                statusLabel.Content += "\nPVG up-to-date: No";
+                statusLabel.Content += "\nPVG REJECTED";
         }
 
         //self explanatory buttons
@@ -141,7 +142,7 @@ namespace SEM_cwk
                 Browser b = new Browser(c, mw);
                 mw.Content = b;
             }
-            else if (label2.Content == "Current match is ")
+            else if (label2.Content != "Current match is ")
             {
                 MessageBox.Show("You may only have one match at a time");
             }
@@ -150,6 +151,26 @@ namespace SEM_cwk
         private void clearButton_Click(object sender, RoutedEventArgs e)
         {
             label2.Content = "Current match is ";
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Account details = new Account(c);
+            details.Show();
+        }
+
+        private void rateButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (label2.Content != "Current match is ")
+            {
+                Rate r = new Rate(c);
+                r.Show();
+            }
+            else
+            {
+                MessageBox.Show("You have not meal to rate yet");
+            }
         }
     }
 }

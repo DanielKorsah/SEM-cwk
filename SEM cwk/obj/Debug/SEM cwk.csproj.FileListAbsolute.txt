@@ -3,19 +3,15 @@ c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\bin\Debug\SE
 c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\bin\Debug\SEM cwk.pdb
 c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\SEM cwk.csprojResolveAssemblyReference.cache
 c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\MainWindow.g.cs
-c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\SingUpPage.g.cs
 c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\App.g.cs
 c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\SEM cwk_MarkupCompile.cache
 c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\SEM cwk_MarkupCompile.lref
 c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\MainWindow.baml
-c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\SingUpPage.baml
 c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\SEM cwk.g.resources
 c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\SEM_cwk.Properties.Resources.resources
 c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\SEM cwk.csproj.GenerateResource.Cache
 c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\SEM cwk.exe
 c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\SEM cwk.pdb
-c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\bin\Debug\Newtonsoft.Json.dll
-c:\users\user\documents\visual studio 2015\Projects\SEM cwk\SEM cwk\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\bin\Debug\SEM cwk.exe.config
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SEM cwk.exe
 C:\Users\Daniel\Documents\SEM-cwk\SEM cwk\obj\Debug\SEM cwk.pdb
@@ -58,3 +54,13 @@ H:\SEM cwk\SEM cwk\obj\Debug\SEM_cwk.Properties.Resources.resources
 H:\SEM cwk\SEM cwk\obj\Debug\SEM cwk.csproj.GenerateResource.Cache
 H:\SEM cwk\SEM cwk\obj\Debug\SEM cwk.exe
 H:\SEM cwk\SEM cwk\obj\Debug\SEM cwk.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\Browser.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\CookerHub.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\SignIn.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\Browser.baml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\CookerHub.baml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\SignIn.baml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\Account.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\Rate.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\Account.baml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SEM cwk\SEM cwk\obj\Debug\Rate.baml

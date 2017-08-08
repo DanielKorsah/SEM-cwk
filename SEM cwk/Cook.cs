@@ -3,43 +3,54 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace SEM_cwk
 {
     
-    public class Cook
+    public class Cook : User
     {
-        private string name;
-        private string password;
-        private bool hygieneCert;
-        private bool pvg;
+        private string hygieneCert;
+        private string pvg;
+        private bool cookApproved;
 
         //expiry dates for hygiene certification and pvg
         private DateTime hDate;
-        private DateTime pDate;
 
         public string Name
         {
-            get { return name; }
-            set { name = value; }
+            get { return this.name; }
+            set { this.name = value; }
         }
 
         public string Password
         {
-            get { return password; }
-            set { password = value; }
+            get { return this.password; }
+            set { this.password = value; }
         }
         
-        public bool HygieneCert
+        public string Location
+        {
+            get { return this.location; }
+            set { this.location = value; }
+        }
+
+        public string HygieneCert
         {
             get { return hygieneCert; }
             set { hygieneCert = value; }
         }
 
-        public bool Pvg
+        public string Pvg
         {
             get { return pvg; }
             set { pvg = value; }
+        }
+
+        public bool CookApproved
+        {
+            get { return cookApproved; }
+            set { cookApproved = value; }
         }
 
         public DateTime H_Date
@@ -48,10 +59,21 @@ namespace SEM_cwk
             set { hDate = value; }
         }
 
-        public DateTime P_Date
+        public void RateMeal(int num)
         {
-            get { return pDate.Date; }
-            set { pDate = value; }
+            if (num > 5 || num < 0)
+            {
+                MessageBox.Show("Error");
+            }
+            else
+            {
+                MessageBox.Show("you rated " + num + " stars");
+            }
+        }
+
+        public void UploadPicture()
+        {
+            MessageBox.Show("Picture uploaded.");
         }
     }
 }
